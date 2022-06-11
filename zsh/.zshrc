@@ -70,7 +70,7 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ssh-agent)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions ssh-agent)
 
 zstyle :omz:plugins:ssh-agent identities id_github id_gitea
 
