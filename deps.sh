@@ -11,7 +11,7 @@ if [[ ! -z $APT_CMD ]]; then
 elif [[ ! -z $PACMAN_CMD ]]; then
     sudo pacman -S zsh
 elif [[ ! -z $BREW_CMD ]]; then
-    brew install zsh 
+    brew install zsh
 else
     echo "No supported package manager found!"
     exit 1;
