@@ -67,3 +67,5 @@ let NERDTreeShowHidden=1
 
 " Theme
 colorscheme dracula
+
+set cmdheight=1     " Airline CMD default height
