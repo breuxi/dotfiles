@@ -72,7 +72,9 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions ssh-agent)
 
-zstyle :omz:plugins:ssh-agent identities id_github id_gitea
+if [ "$SSH_ENABLED" = "true" ]; then
+    zstyle :omz:plugins:ssh-agent identities id_github id_gitea
+fi
 
 source $ZSH/oh-my-zsh.sh
 
