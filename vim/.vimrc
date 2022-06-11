@@ -37,8 +37,27 @@ call plug#begin()
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'ryanoasis/vim-devicons'
     Plug 'vim-airline/vim-airline'
-    Plug 'maralla/completor.vim'
+    " Plug 'maralla/completor.vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'mattn/emmet-vim'
+    Plug 'alvan/vim-closetag'
 call plug#end()
+
+" let g:user_emmet_expandabbr_key='<Tab>'
+
+let g:coc_global_extensions = [
+	    \ 'coc-snippets',
+	    \ 'coc-html', 
+	    \ 'coc-json', 
+	    \ 'coc-git',
+	    \ 'coc-tsserver',
+	    \ 'coc-python',
+	    \ 'coc-pairs',
+	    \ 'coc-emmet',
+	    \ '@yaegassy/coc-nginx'
+	    \ ]
+
+source ~/.vim/coc/coc.vim
 
 " Shortcuts
 nnoremap <C-d> :NERDTreeToggle<CR>
