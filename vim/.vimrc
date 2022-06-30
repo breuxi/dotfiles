@@ -37,10 +37,13 @@ call plug#begin()
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'ryanoasis/vim-devicons'
     Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     " Plug 'maralla/completor.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'mattn/emmet-vim'
     Plug 'alvan/vim-closetag'
+    Plug 'Matt-Deacalion/vim-systemd-syntax'
+    Plug 'chr4/nginx.vim'
 call plug#end()
 
 " let g:user_emmet_expandabbr_key='<Tab>'
@@ -61,6 +64,7 @@ source ~/.vim/coc/coc.vim
 
 " Shortcuts
 nnoremap <C-d> :NERDTreeToggle<CR>
+map <F7> gg=G<C-o><C-o>
 
 " Commands
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
