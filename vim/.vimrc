@@ -62,6 +62,9 @@ source ~/.vim/coc/coc.vim
 " Shortcuts
 nnoremap <C-d> :NERDTreeToggle<CR>
 
+" Commands
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
 " NERDTree
 let NERDTreeShowHidden=1
 
